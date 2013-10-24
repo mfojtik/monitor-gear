@@ -3,7 +3,7 @@
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
 set -e
 
-client_message "Gear Monitor is not installed."
+client_message "Gear Monitor is now installed."
 
 if [ -z "$NOTIFICATION_EMAIL" ]; then
   client_result "\nPlease set the NOTIFICATION_MAIL variable:"
