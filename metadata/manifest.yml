@@ -1,5 +1,5 @@
 ---
-Name: gear_monitor
+Name: monitor_gear
 Cartridge-Short-Name: GEAR_MONITOR
 Display-Name: Gear Monitor
 Description: "A collection on monitoring scripts for OpenShift gears."
