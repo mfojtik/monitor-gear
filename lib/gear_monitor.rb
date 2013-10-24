@@ -29,7 +29,7 @@ module GearMonitor
     if type == :memory
       data = {
         :body => ERB.new(
-          File.read(File.join(ENV['OPENSHIFT_GEAR_MONITOR_DIR'], 'templates', 'memory.erb'))
+          File.read(File.join(ENV['OPENSHIFT_MONITOR_GEAR_DIR'], 'templates', 'memory.erb'))
         ).result(binding),
         :subject => "[ALARM] Application #{ENV['OPENSHIFT_GEAR_NAME']} use 90% of gear memory."
       }

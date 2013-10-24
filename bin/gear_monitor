@@ -2,4 +2,4 @@
 
 set -e
 
-oo-ruby -I${OPENSHIFT_GEAR_MONITOR_DIR}lib/ -rgear_monitor -e "GearMonitor.memory_check"
+oo-ruby -I${OPENSHIFT_MONITOR_GEAR_DIR}lib/ -rgear_monitor -e "GearMonitor.memory_check"

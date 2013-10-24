@@ -11,7 +11,7 @@ function start() {
     echo "Please run: rhc env-set NOTIFICATION_EMAIL=you_email"
     exit
   fi
-  ln -sf $OPENSHIFT_GEAR_MONITOR_DIR/bin/gear_monitor \
+  ln -sf $OPENSHIFT_MONITOR_GEAR_DIR/bin/gear_monitor \
     $OPENSHIFT_HOMEDIR/app-root/repo/.openshift/cron/minitely/gear_monitor
 }
 
