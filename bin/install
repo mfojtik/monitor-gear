@@ -1,6 +1,7 @@
 #!/bin/bash
 
+source $OPENSHIFT_CARTRIDGE_SDK_BASH
 set -e
 
-echo "Installing Gear Monitor dependencies..."
+client_result "Installing Gear Monitor dependencies..."
 gem install pony --no-ri --no-rdoc

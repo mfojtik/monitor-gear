@@ -4,12 +4,12 @@ function start() {
   echo "Starting Gear Monitor"
   if [ -z "$OPENSHIFT_CRON_DIR" ]; then
     echo "ERROR: cron cartridge must be installed!"
-    exit 1
+    exit
   fi
   if [ -z "$NOTIFICATION_EMAIL" ]; then
-    echo "ERROR: your notification mail is not set!"
+    echo "ERROR: your notification mail must be set!"
     echo "Please run: rhc env-set NOTIFICATION_EMAIL=you_email"
-    exit 1
+    exit
   fi
   ln -sf $OPENSHIFT_GEAR_MONITOR_DIR/bin/gear_monitor \
     $OPENSHIFT_HOMEDIR/app-root/repo/.openshift/cron/minitely/gear_monitor
