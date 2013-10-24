@@ -1,0 +1,5 @@
+#!/bin/sh
+
+set -e
+
+oo-ruby -I${OPENSHIFT_GEAR_MONITOR_DIR}lib/ -rgear_monitor -e "GearMonitor.memory_check"

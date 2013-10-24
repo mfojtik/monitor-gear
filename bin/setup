@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -e
+
+client_message "Gear Monitor is not installed."
+
+if [ -z "$NOTIFICATION_EMAIL" ]; then
+  client_result "\nPlease set the NOTIFICATION_MAIL variable:"
+  client_result "   rhc env-set NOTIFICATION_MAIL=admin@example.com -a ${OPENSHIFT_APP_NAME}"
+  client_result ""
+fi
