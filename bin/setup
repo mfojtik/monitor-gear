@@ -1,5 +1,6 @@
 #!/bin/bash
 
+source $OPENSHIFT_CARTRIDGE_SDK_BASH
 set -e
 
 client_message "Gear Monitor is not installed."
