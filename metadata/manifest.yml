@@ -1,0 +1,23 @@
+---
+Name: Gear Monitor
+Cartridge-Short-Name: GEAR_MONITOR
+Display-Name: Gear Monitor
+Description: "A collection on monitoring scripts for OpenShift gears."
+Source-Url: https://github.com/mfojtik/monitor-gear.git
+Version: '1.0'
+License: ASL 2.0
+Vendor: mfojtik
+Cartridge-Version: 0.0.1
+Cartridge-Vendor: mfojtik
+Categories:
+  - embedded
+  - service
+Provides:
+  - gear_monitor-0.1
+  - gear_monitor
+Publishes:
+Subscribes:
+Endpoints:
+Scaling:
+  Min: 1
+  Max: -1
